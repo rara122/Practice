@@ -1,0 +1,6 @@
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Any_Practice\bin\Debug\Any_Practice.exe.config
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Any_Practice\bin\Debug\Any_Practice.exe
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Any_Practice\bin\Debug\Any_Practice.pdb
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Any_Practice\obj\Debug\Any_Practice.exe
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Any_Practice\obj\Debug\Any_Practice.pdb
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Any_Practice\obj\Debug\Any_Practice.csprojResolveAssemblyReference.cache

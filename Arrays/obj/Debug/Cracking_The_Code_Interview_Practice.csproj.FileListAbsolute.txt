@@ -1,0 +1,3 @@
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Arrays\obj\Debug\Cracking_The_Code_Interview_Practice.csprojResolveAssemblyReference.cache
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Arrays\obj\Debug\Arrays.exe
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Arrays\obj\Debug\Arrays.pdb

@@ -1,0 +1,15 @@
+c:\users\jyoo\documents\visual studio 2015\Projects\Permutations\Permutations\bin\Debug\Permutations.exe.config
+c:\users\jyoo\documents\visual studio 2015\Projects\Permutations\Permutations\bin\Debug\Permutations.exe
+c:\users\jyoo\documents\visual studio 2015\Projects\Permutations\Permutations\bin\Debug\Permutations.pdb
+c:\users\jyoo\documents\visual studio 2015\Projects\Permutations\Permutations\obj\Debug\Permutations.csprojResolveAssemblyReference.cache
+c:\users\jyoo\documents\visual studio 2015\Projects\Permutations\Permutations\obj\Debug\Permutations.exe
+c:\users\jyoo\documents\visual studio 2015\Projects\Permutations\Permutations\obj\Debug\Permutations.pdb
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\PracticeApps\Permutations\bin\Debug\Permutations.exe.config
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\PracticeApps\Permutations\obj\Debug\Permutations.exe
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\PracticeApps\Permutations\obj\Debug\Permutations.pdb
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Permutations\bin\Debug\Permutations.exe.config
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Permutations\obj\Debug\Permutations.exe
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Permutations\obj\Debug\Permutations.pdb
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Permutations\bin\Debug\Permutations.exe
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Permutations\bin\Debug\Permutations.pdb
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Permutations\obj\Debug\Permutations.csprojResolveAssemblyReference.cache

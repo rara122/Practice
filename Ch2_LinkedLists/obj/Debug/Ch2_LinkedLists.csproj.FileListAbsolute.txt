@@ -1,0 +1,6 @@
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch2_LinkedLists\bin\Debug\Ch2_LinkedLists.exe.config
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch2_LinkedLists\bin\Debug\Ch2_LinkedLists.exe
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch2_LinkedLists\bin\Debug\Ch2_LinkedLists.pdb
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch2_LinkedLists\obj\Debug\Ch2_LinkedLists.exe
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch2_LinkedLists\obj\Debug\Ch2_LinkedLists.pdb
+C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch2_LinkedLists\obj\Debug\Ch2_LinkedLists.csprojResolveAssemblyReference.cache
