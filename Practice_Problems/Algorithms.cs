@@ -9,7 +9,47 @@ namespace PracticeProblems {
     public static class Algorithms {
 
         /// <summary>
-        /// Convert a BST to a DoublyLinkedList 
+        /// Output any path of a given Binary Tree that sums up to the specified value.
+        /// ref: http://codercareer.blogspot.com/2011/09/no-04-paths-with-specified-sum-in.html
+        /// Make sure to traverse all the nodes: BFS OR DFS both work 
+        /// Keep in mind this is Binary Tree not BST
+        /// </summary>
+        public static void FindPathForSum(Node root, int expectedSum) {
+            List<int> path = new List<int>();
+            FindPathForSum(root, expectedSum, ref path);
+        }
+        private static void FindPathForSum(Node currentNode, int expectedSum, ref List<int> path, int currentSum = 0) {
+            //Recurse Base Case
+            if (currentNode == null || path == null) {
+                return;
+            }
+
+            //Load this into the path
+            path.Add(currentNode.Value);
+            //Add value to currentSum
+            currentSum += currentNode.Value;
+
+            //Is it a Leaf?
+            if (currentNode.Left == null && currentNode.Right == null) {
+                //Did we find the expectedSum?
+                if (currentSum == expectedSum) {
+                    //Output Results
+                    Console.WriteLine($"A path found: {string.Join(" + ", path)}");
+                }
+            }
+
+            //Recurse Left
+            FindPathForSum(currentNode.Left, expectedSum, ref path, currentSum);
+            //Recure Right
+            FindPathForSum(currentNode.Right, expectedSum, ref path, currentSum);
+
+            //Finished the traversal, Remove this path
+            path.RemoveAt(path.Count - 1);
+        }
+
+        /// <summary>
+        /// Convert a Binary Search Tree to a DoublyLinkedList 
+        /// ref: http://codercareer.blogspot.com/2011/09/interview-question-no-1-binary-search.html
         /// </summary>
         /// <param name="root"></param>
         /// <returns></returns>
@@ -46,33 +86,79 @@ namespace PracticeProblems {
         }
 
         /// <summary>
-        /// Builds a sample tree
+        /// Builds a sample tree (Binary Search Tree)
         /// </summary>
         /// <returns></returns>
-        public static BinarySearchTree BuildTree() {
-            /*
-             *           10
-             *        /      \
-             *      6         14
-             *    /   \     /    \
-             *   4     8   12    16
-             * 
-             */
+        public static BinarySearchTree BuildTree(int type = 0) {
+            List<Node> nodeList = new List<Node>();
+            BinarySearchTree tree = new BinarySearchTree();
 
-            Node n1, n2, n3, n4, n5, n6, n7;
-            n1 = new Node(4);
-            n2 = new Node(6);
-            n3 = new Node(8);
-            n4 = new Node(10);
-            n5 = new Node(12);
-            n6 = new Node(14);
-            n7 = new Node(16);
 
-            n2.Left = n1; n2.Right = n3;
-            n4.Left = n2; n4.Right = n6;
-            n6.Left = n5; n6.Right = n7;
+            switch (type) {
+                case 1:
+                    /*
+                     * Standard Binary Tree
+                     * 
+                     *             10
+                     *          /      \
+                     *        6         5
+                     *      /   \     /    \
+                     *     4     8   3     16
+                     *    /
+                     *   11
+                     *   
+                     */
 
-            BinarySearchTree tree = new BinarySearchTree() { Root = n4 };
+
+                    nodeList.Add(new Node(4));
+                    nodeList.Add(new Node(6));
+                    nodeList.Add(new Node(8));
+                    nodeList.Add(new Node(10));
+                    nodeList.Add(new Node(3));
+                    nodeList.Add(new Node(5));
+                    nodeList.Add(new Node(16));
+                    nodeList.Add(new Node(11));
+
+                    //[Node 6]
+                    nodeList[1].Left = nodeList[0]; nodeList[1].Right = nodeList[2];
+                    //[Node 10]
+                    nodeList[3].Left = nodeList[1]; nodeList[3].Right = nodeList[5];
+                    //[Node 5]
+                    nodeList[5].Left = nodeList[4]; nodeList[5].Right = nodeList[6];
+                    //[Node 11]
+                    nodeList[0].Left = nodeList[7];
+
+                    tree.Root = nodeList[3];
+                    break;
+                case 0:
+                default:
+                    /*
+                     * Standard Binary Search Tree
+                     * 
+                     *           10
+                     *        /      \
+                     *      6         14
+                     *    /   \     /    \
+                     *   4     8   12    16
+                     * 
+                     */
+
+
+                    nodeList.Add(new Node(4));
+                    nodeList.Add(new Node(6));
+                    nodeList.Add(new Node(8));
+                    nodeList.Add(new Node(10));
+                    nodeList.Add(new Node(12));
+                    nodeList.Add(new Node(14));
+                    nodeList.Add(new Node(16));
+
+                    nodeList[1].Left = nodeList[0]; nodeList[1].Right = nodeList[2];
+                    nodeList[3].Left = nodeList[1]; nodeList[3].Right = nodeList[5];
+                    nodeList[5].Left = nodeList[4]; nodeList[5].Right = nodeList[6];
+
+                    tree.Root = nodeList[3];
+                    break;
+            }
 
             return tree;
         }
