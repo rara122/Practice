@@ -13,3 +13,9 @@ C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\ThreadingPract
 C:\Users\JYoo\Documents\GitHub\Practice\ThreadingPractice\bin\Debug\ThreadingPractice.exe.config
 C:\Users\JYoo\Documents\GitHub\Practice\ThreadingPractice\obj\Debug\ThreadingPractice.exe
 C:\Users\JYoo\Documents\GitHub\Practice\ThreadingPractice\obj\Debug\ThreadingPractice.pdb
+C:\Users\JYoo\Documents\GitHub\Practice\ThreadPractice\bin\Debug\ThreadingPractice.exe.config
+C:\Users\JYoo\Documents\GitHub\Practice\ThreadPractice\bin\Debug\ThreadingPractice.exe
+C:\Users\JYoo\Documents\GitHub\Practice\ThreadPractice\bin\Debug\ThreadingPractice.pdb
+C:\Users\JYoo\Documents\GitHub\Practice\ThreadPractice\obj\Debug\ThreadPractice.csprojResolveAssemblyReference.cache
+C:\Users\JYoo\Documents\GitHub\Practice\ThreadPractice\obj\Debug\ThreadingPractice.exe
+C:\Users\JYoo\Documents\GitHub\Practice\ThreadPractice\obj\Debug\ThreadingPractice.pdb

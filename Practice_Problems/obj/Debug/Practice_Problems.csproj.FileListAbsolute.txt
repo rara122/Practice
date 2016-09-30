@@ -1,0 +1,6 @@
+C:\Users\JYoo\Documents\GitHub\Practice\Practice_Problems\bin\Debug\Any_Practice.exe.config
+C:\Users\JYoo\Documents\GitHub\Practice\Practice_Problems\bin\Debug\Any_Practice.exe
+C:\Users\JYoo\Documents\GitHub\Practice\Practice_Problems\bin\Debug\Any_Practice.pdb
+C:\Users\JYoo\Documents\GitHub\Practice\Practice_Problems\obj\Debug\Practice_Problems.csprojResolveAssemblyReference.cache
+C:\Users\JYoo\Documents\GitHub\Practice\Practice_Problems\obj\Debug\Any_Practice.exe
+C:\Users\JYoo\Documents\GitHub\Practice\Practice_Problems\obj\Debug\Any_Practice.pdb
