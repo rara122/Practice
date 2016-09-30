@@ -3,17 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations", "Permutations\Permutations.csproj", "{39D5807F-6024-4060-866C-B8374E5D62B6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPractice", "ThreadingPractice\ThreadPractice.csproj", "{DB218FBD-855D-437C-A143-862A6A371534}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting Practice", "Sorting Practice\Sorting Practice.csproj", "{4E785E8F-21C9-46B3-BECB-E5B6E2FD7ADC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cracking_The_Code_Interview_Practice", "Arrays\Cracking_The_Code_Interview_Practice.csproj", "{391B998D-7144-4F2F-AD61-1900197CCE90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cracking_The_Code_Interview", "Arrays\Cracking_The_Code_Interview.csproj", "{391B998D-7144-4F2F-AD61-1900197CCE90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Any_Practice", "Any_Practice\Any_Practice.csproj", "{59A8EBFB-25C7-4D37-A2FB-35CC50212824}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch3_Stacks_Queues", "Ch3_Stacks_Queues\Ch3_Stacks_Queues.csproj", "{63A4E773-1AA3-4E03-B320-D73411C35410}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_Problems", "Any_Practice\Practice_Problems.csproj", "{59A8EBFB-25C7-4D37-A2FB-35CC50212824}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{39D5807F-6024-4060-866C-B8374E5D62B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39D5807F-6024-4060-866C-B8374E5D62B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39D5807F-6024-4060-866C-B8374E5D62B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39D5807F-6024-4060-866C-B8374E5D62B6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DB218FBD-855D-437C-A143-862A6A371534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DB218FBD-855D-437C-A143-862A6A371534}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB218FBD-855D-437C-A143-862A6A371534}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,10 +33,6 @@ Global
 		{59A8EBFB-25C7-4D37-A2FB-35CC50212824}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59A8EBFB-25C7-4D37-A2FB-35CC50212824}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59A8EBFB-25C7-4D37-A2FB-35CC50212824}.Release|Any CPU.Build.0 = Release|Any CPU
-		{63A4E773-1AA3-4E03-B320-D73411C35410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63A4E773-1AA3-4E03-B320-D73411C35410}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63A4E773-1AA3-4E03-B320-D73411C35410}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63A4E773-1AA3-4E03-B320-D73411C35410}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

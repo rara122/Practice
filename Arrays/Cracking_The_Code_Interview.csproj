@@ -46,6 +46,7 @@
     <Compile Include="Chapter1_Arrays\Q1.cs" />
     <Compile Include="Chapter2_LinkedLists\Q1.cs" />
     <Compile Include="Chapter2_LinkedLists\Q2.cs" />
+    <Compile Include="Chatper3_Stacks_Queues\Ch3_Q2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
