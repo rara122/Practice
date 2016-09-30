@@ -1,1 +1,2 @@
 C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Sorting Practice\obj\Debug\Sorting Practice.csprojResolveAssemblyReference.cache
+C:\Users\JYoo\Documents\GitHub\Practice\Sorting Practice\bin\Debug\Sorting Practice.exe.config
