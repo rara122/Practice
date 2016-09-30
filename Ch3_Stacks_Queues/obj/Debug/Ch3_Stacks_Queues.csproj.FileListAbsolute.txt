@@ -1,6 +1,0 @@
-C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch3_Stacks_Queues\bin\Debug\Ch3_Stacks_Queues.exe.config
-C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch3_Stacks_Queues\bin\Debug\Ch3_Stacks_Queues.exe
-C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch3_Stacks_Queues\bin\Debug\Ch3_Stacks_Queues.pdb
-C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch3_Stacks_Queues\obj\Debug\Ch3_Stacks_Queues.exe
-C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch3_Stacks_Queues\obj\Debug\Ch3_Stacks_Queues.pdb
-C:\Users\JYoo\Documents\Visual Studio 2015\Projects\Practice Apps\Ch3_Stacks_Queues\obj\Debug\Ch3_Stacks_Queues.csprojResolveAssemblyReference.cache
