@@ -9,6 +9,58 @@ namespace PracticeProblems {
     public static class Algorithms {
 
         /// <summary>
+        /// Check to see if an array of input is the result of a Post Order tree traversal
+        /// ref: http://codercareer.blogspot.com/2011/09/no-06-post-order-traversal-sequences-of.html
+        /// Post Order: Left, Right, Curr
+        /// Pre Order : Curr, Left, Right
+        /// In Order  : Left, Curr, Right
+        /// 
+        /// Standard Binary Search Tree
+        /// 
+        ///           10
+        ///        /      \
+        ///      6         14
+        ///    /   \     /    \
+        ///   4     8   12    16
+        /// 
+        /// Traversed Post Order: 4, 8, 6, 12, 16, 14, 10
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public static bool PostOrderTreeSequence(int[] array, int start, int end) {
+
+            //Base Case: 1 or 0 Elements
+            if (((end - start + 1) <= 1) || (array == null) || array.Count() <= 1) {
+                return true;
+            }
+
+            //Set root = A[end]
+            int rootValue = array[end];
+
+            //Get left/right subtree indices
+            int middleIndex = ((end - start - 1) / 2) + start + 1;
+
+            //Check Left subtree nodes < rootValue
+            for (int i = start; i < middleIndex; i++) {
+                if (array[i] > rootValue) {
+                    return false;
+                }
+            }
+            //Check Right subtree nodes > rootValue
+            for (int i = middleIndex; i < end; i++) {
+                if (array[i] < rootValue) {
+                    return false;
+                }
+            }
+
+            //Recurse
+            bool left = PostOrderTreeSequence(array, start, middleIndex-1);
+            bool right = PostOrderTreeSequence(array, middleIndex, (end - 1));
+
+            return (left && right);
+        }
+
+        /// <summary>
         /// Output any path of a given Binary Tree that sums up to the specified value.
         /// ref: http://codercareer.blogspot.com/2011/09/no-04-paths-with-specified-sum-in.html
         /// Make sure to traverse all the nodes: BFS OR DFS both work 
