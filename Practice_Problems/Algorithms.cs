@@ -7,6 +7,78 @@ using PracticeProblems.Models;
 
 namespace PracticeProblems {
     public static class Algorithms {
+        /// <summary>
+        /// Check to see if a tree is a Binary Search Tree (Using PostOrder Traversal)
+        /// ref: http://codercareer.blogspot.com/2012/01/no-31-binary-search-tree-verification.html
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
+        public static bool IsBinarySearchTree2(Node root, int min = int.MinValue, int max = int.MaxValue) {
+            //Base Case
+            if (root == null) {
+                return true;
+            }
+
+            bool left = IsBinarySearchTree(root.Left, min, root.Value);
+            bool right = IsBinarySearchTree(root.Right, root.Value, max);
+
+            //PreOrder check of Values
+            if (root.Value < min || root.Value > max) {
+                return false;
+            }
+
+
+            return (left && right);
+        }
+        /// <summary>
+        /// Check to see if a tree is a Binary Search Tree (Using InOrder Traversal)
+        /// ref: http://codercareer.blogspot.com/2012/01/no-31-binary-search-tree-verification.html
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
+        public static bool IsBinarySearchTree1(Node root, int min = int.MinValue) {
+            if (root == null) {
+                return true;
+            }
+
+            //Traverse the tree using INORDER traversal 
+            //If there is a value that is not ASC then it is not a BST
+            bool left = IsBinarySearchTree(root.Left, min);
+            if (root.Value < min) {
+                return false;
+            }
+            bool right = IsBinarySearchTree(root.Right, root.Value);
+
+            return (left && right);
+        }
+        /// <summary>
+        /// Check to see if a tree is a Binary Search Tree (Using PreOrder Traversal)
+        /// ref: http://codercareer.blogspot.com/2012/01/no-31-binary-search-tree-verification.html
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
+        public static bool IsBinarySearchTree(Node root, int min = int.MinValue, int max = int.MaxValue) {
+            //Base Case
+            if (root == null) {
+                return true;
+            }
+
+            //PreOrder check of Values
+            if (root.Value < min || root.Value > max) {
+                return false;
+            }
+
+            bool left = IsBinarySearchTree(root.Left, min, root.Value);
+            bool right = IsBinarySearchTree(root.Right, root.Value, max);
+
+            return (left && right);
+        }
 
         /// <summary>
         /// Check to see if an array of input is the result of a Post Order tree traversal

@@ -22,10 +22,18 @@ namespace PracticeProblems {
             //    Console.Beep();
             //}
 
-            int[] array = new int[] { 2, 4, 8, 6, 12, 16, 14, 7 };
-            //int[] array = new int[] { 2, 4, 8, 6, 12, 16, 14, 10 };
-            Console.WriteLine($"Checking for Post Order Tree Sequence: {Algorithms.PostOrderTreeSequence(array, 0, array.Length - 1)}"); 
-            Console.ReadKey();
+            //int[] array = new int[] { 2, 4, 8, 6, 12, 16, 14, 7 };
+            //int[] array = new int[] { 4, 8, 6, 12, 16, 14, 10 };
+            //Console.WriteLine($"Checking for Post Order Tree Sequence: {Algorithms.PostOrderTreeSequence(array, 0, array.Length - 1)}"); 
+            //Console.ReadKey();
+            BinarySearchTree tree = Algorithms.BuildTree();
+            Console.WriteLine($"First Tree: BST? {Algorithms.IsBinarySearchTree2(tree.Root)}");
+
+
+            tree = Algorithms.BuildTree(1);
+            Console.WriteLine($"Second Tree: BST? {Algorithms.IsBinarySearchTree2(tree.Root)}");
+            Console.Read();
+            Console.Beep();
         }
     }
 }
