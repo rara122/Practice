@@ -7,6 +7,128 @@ using PracticeProblems.Models;
 
 namespace PracticeProblems {
     public static class Algorithms {
+
+        /// <summary>
+        /// Check whether or not a given Value can be summed up from two nodes of a given BST
+        /// ref: http://codercareer.blogspot.com/2013/03/no-46-nodes-with-sum-in-binary-search.html
+        /// </summary>
+        /// <returns></returns>
+        public static bool HasSumInBST(Node root, int expectedValue) {
+            Stack<Node> minStack = BuildMinStack(root);
+            Stack<Node> maxStack = BuildMaxStack(root);
+
+            if (root == null || minStack == null || maxStack == null) {
+                return false;
+            }
+
+            int? left = GetMin(ref minStack);
+            int? right = GetMax(ref maxStack);
+
+            while (left != right && left != null && right != null) {
+                if (left + right == expectedValue) {
+                    return true;
+                }
+
+                if (left + right > expectedValue) {
+                    right = GetMax(ref maxStack);
+                }
+                else {
+                    left = GetMin(ref minStack);
+                }
+            }
+
+            return false;
+        }
+        private static Stack<Node> BuildMinStack(Node root) {
+            Stack<Node> minStack = new Stack<Node>();
+            while (root != null) {
+                minStack.Push(root);
+                root = root.Left;
+            }
+            return minStack;
+        }
+        private static Stack<Node> BuildMaxStack(Node root) {
+            Stack<Node> maxStack = new Stack<Node>();
+            while (root != null) {
+                maxStack.Push(root);
+                root = root.Right;
+            }
+            return maxStack;
+        }
+        private static int? GetMin(ref Stack<Node> minStack) {
+            if (minStack.Count < 1) {
+                return null;
+            }
+
+            int result = minStack.Peek().Value;
+
+            Node n = minStack.Pop();
+            n = n.Right;
+            while (n != null) {
+                minStack.Push(n);
+                n = n.Left;
+            }
+
+            return result;
+        }
+        private static int? GetMax(ref Stack<Node> maxStack) {
+            if (maxStack.Count < 1) {
+                return null;
+            }
+
+            int result = maxStack.Peek().Value;
+
+            Node n = maxStack.Pop();
+            n = n.Left;
+            while (n != null) {
+                maxStack.Push(n);
+                n = n.Right;
+            }
+
+            return result;
+        }
+        /*
+         * Standard Binary Search Tree
+         * 
+         *           10
+         *        /      \
+         *      8         14
+         *    /   \     /    \
+         *   4     9   12    16
+         *    \
+         *     6
+         *    /\
+         *   5  7
+         */
+        /// <summary>
+        /// Find the closest Node to the a given value within a BST
+        /// ref: 
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="expectedValue"></param>
+        /// <returns></returns>
+        public static int? FindClosestValueInBST(Node root, int expectedValue) {
+            int min = int.MinValue;
+            return FindClosestValueInBST(root, expectedValue, ref min);
+        }
+        private static int? FindClosestValueInBST(Node root, int expectedValue, ref int possibleResult) {
+            if (root == null) {
+                return null;
+            }
+
+            if (root.Value == expectedValue) {
+                possibleResult = root.Value;
+            }
+            else {
+                if (Math.Abs(root.Value - possibleResult) < Math.Abs(expectedValue - possibleResult)) {
+                    possibleResult = root.Value;
+                }
+                FindClosestValueInBST(root.Left, expectedValue, ref possibleResult);
+                FindClosestValueInBST(root.Right, expectedValue, ref possibleResult);
+            }
+            return possibleResult;
+        }
+
         /// <summary>
         /// Check to see if a tree is a Binary Search Tree (Using PostOrder Traversal)
         /// ref: http://codercareer.blogspot.com/2012/01/no-31-binary-search-tree-verification.html
@@ -126,7 +248,7 @@ namespace PracticeProblems {
             }
 
             //Recurse
-            bool left = PostOrderTreeSequence(array, start, middleIndex-1);
+            bool left = PostOrderTreeSequence(array, start, middleIndex - 1);
             bool right = PostOrderTreeSequence(array, middleIndex, (end - 1));
 
             return (left && right);

@@ -10,30 +10,19 @@ namespace PracticeProblems {
             //Node headNode = Algorithms.ConvertToDoublyLinkedList(tree.Root);
             //headNode.Output();
 
-            //BinarySearchTree tree = Algorithms.BuildTree(1);
-            //for (int i = 0; i < 5; i++) {
-            //    Console.Write("Input an integer to FindPathForSum: ");
-            //    int expectedSum = 0;
-            //    //string input = Console.ReadLine();
-            //    if (Int32.TryParse(Console.ReadLine(), out expectedSum)) {
-            //        Algorithms.FindPathForSum(tree.Root, expectedSum);
-            //    }
+            BinarySearchTree tree = Algorithms.BuildTree(0);
+            for (int i = 0; i < 15; i++) {
+                Console.Write("Input a number, I will see if that sum exists: ");
+                int expectedSum = 0;
+                //string input = Console.ReadLine();
+                if (int.TryParse(Console.ReadLine(), out expectedSum)) {
+                    Console.WriteLine($"Closest node was: {Algorithms.HasSumInBST(tree.Root, expectedSum)}");
+                }
 
-            //    Console.Beep();
-            //}
-
-            //int[] array = new int[] { 2, 4, 8, 6, 12, 16, 14, 7 };
-            //int[] array = new int[] { 4, 8, 6, 12, 16, 14, 10 };
-            //Console.WriteLine($"Checking for Post Order Tree Sequence: {Algorithms.PostOrderTreeSequence(array, 0, array.Length - 1)}"); 
-            //Console.ReadKey();
-            BinarySearchTree tree = Algorithms.BuildTree();
-            Console.WriteLine($"First Tree: BST? {Algorithms.IsBinarySearchTree2(tree.Root)}");
-
-
-            tree = Algorithms.BuildTree(1);
-            Console.WriteLine($"Second Tree: BST? {Algorithms.IsBinarySearchTree2(tree.Root)}");
-            Console.Read();
+            }
             Console.Beep();
+            Console.Read();
+
         }
     }
 }
